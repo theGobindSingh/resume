@@ -20,6 +20,7 @@ export default function Nav() {
       document.querySelector(".burger").classList.toggle("toggle");
     } catch {}
   }
+  const linkPre = "resume";
   return (
     <div id="Nav">
       <div
@@ -39,28 +40,28 @@ export default function Nav() {
               navi();
             }}
           >
-            <a href="/#Home">Home</a>
+            <a href={linkPre + "/#Home"}>Home</a>
           </li>
           <li
             onClick={() => {
               navi();
             }}
           >
-            <a href="/#About">About</a>
+            <a href={linkPre + "/#About"}>About</a>
           </li>
           <li
             onClick={() => {
               navi();
             }}
           >
-            <a href="/#ExpEdu">Education & Experience</a>
+            <a href={linkPre + "/#ExpEdu"}>Education & Experience</a>
           </li>
           <li
             onClick={() => {
               navi();
             }}
           >
-            <a href="/#Sample">My Sample Works</a>
+            <a href={linkPre + "/#Sample"}>My Sample Works</a>
           </li>
         </ul>
       </nav>
