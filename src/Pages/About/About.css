@@ -10,9 +10,10 @@
   top: 0 auto;
   padding: 0%;
   margin: 0%;
+  margin-top: -2%;
   height: auto;
   width: 100%;
-  fill: blueviolet;
+  fill: lightskyblue;
   overflow: hidden;
 }
 
@@ -87,9 +88,9 @@
   bottom: 0;
   padding: 0%;
   margin: 0%;
-  margin-bottom: -2%;
+  margin-bottom: -3%;
   height: auto;
   width: 100%;
-  fill: blueviolet;
+  fill: lightskyblue;
   overflow: hidden;
 }

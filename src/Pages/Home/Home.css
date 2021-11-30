@@ -17,7 +17,7 @@
   margin-left: 02.5%;
   margin-right: 02.5%;
   width: 30%;
-  text-shadow: 0 0 75px blueviolet;
+  text-shadow: 0 0 75px lightskyblue;
 }
 #Home .text span {
   font-family: "Josefin Sans", sans-serif;
@@ -96,6 +96,6 @@
   margin-bottom: -2%;
   height: auto;
   width: 100%;
-  fill: blueviolet;
+  fill: lightskyblue;
   overflow: hidden;
 }

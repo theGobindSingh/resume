@@ -1,6 +1,8 @@
 import "./Nav.css";
 import React from "react";
 
+import { HashLink as Link } from "react-router-hash-link";
+
 export default function Nav() {
   function navi() {
     try {
@@ -20,7 +22,7 @@ export default function Nav() {
       document.querySelector(".burger").classList.toggle("toggle");
     } catch {}
   }
-  const linkPre = "resume";
+  // const linkPre = "resume";
   return (
     <div id="Nav">
       <div
@@ -40,28 +42,28 @@ export default function Nav() {
               navi();
             }}
           >
-            <a href="/#Home">Home</a>
+            <Link to="/#Home">Home</Link>
           </li>
           <li
             onClick={() => {
               navi();
             }}
           >
-            <a href="/#About">About</a>
+            <Link to="/#About">About</Link>
           </li>
           <li
             onClick={() => {
               navi();
             }}
           >
-            <a href="/#ExpEdu">Education & Experience</a>
+            <Link to="/#ExpEdu">Education & Experience</Link>
           </li>
           <li
             onClick={() => {
               navi();
             }}
           >
-            <a href="/#Sample">My Sample Works</a>
+            <Link to="/#Sample">My Sample Works</Link>
           </li>
         </ul>
       </nav>
