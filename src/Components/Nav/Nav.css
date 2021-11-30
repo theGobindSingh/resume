@@ -1,0 +1,79 @@
+#Nav {
+  /* position: fixed; */
+  right: 5%;
+  top: 5%;
+  z-index: 3;
+}
+#Nav .burger {
+  position: fixed;
+  z-index: 99 !important;
+  right: 5%;
+  top: 5%;
+  display: block;
+}
+#Nav .burger div {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 40px aliceblue, 0 0 30px blueviolet, 0 0 20px blueviolet;
+}
+#Nav .toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+  background-color: aliceblue;
+}
+#Nav .toggle .line2 {
+  opacity: 0;
+}
+#Nav .toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+  background-color: aliceblue;
+}
+
+#Nav .nav-links {
+  display: flex;
+  position: fixed;
+  right: 0%;
+  top: 0%;
+  padding-top: 60px;
+  padding-bottom: 110px;
+  height: 100vh;
+  width: 30%;
+  background-color: rgba(60, 134, 219, 0.8);
+  z-index: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transform: translateX(100%);
+  transition: all 0.5s ease-in-out;
+}
+#Nav .nav-active {
+  transform: translateX(0%);
+  box-shadow: 0 0 150px rgb(70, 40, 0);
+}
+#Nav .nav-links li {
+  list-style: none;
+  opacity: 0;
+}
+
+#Nav a {
+  text-decoration: none;
+  color: inherit;
+  transition: all ease 0.3s;
+}
+#Nav a:hover {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}

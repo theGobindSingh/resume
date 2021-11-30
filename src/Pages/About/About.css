@@ -1,0 +1,95 @@
+#About {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.Fig._4.Container {
+  position: absolute;
+  left: 0;
+  top: 0 auto;
+  padding: 0%;
+  margin: 0%;
+  height: auto;
+  width: 100%;
+  fill: blueviolet;
+  overflow: hidden;
+}
+
+#About .allContent {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#About h2 {
+  margin-bottom: 3%;
+  font-family: "Comforter", cursive;
+  font-size: 4rem;
+  font-weight: 200;
+}
+
+#About .abt {
+  display: flex;
+  justify-content: center;
+}
+#About .abt .rule {
+  width: 1px;
+  height: 100%;
+  background-color: grey;
+  border-radius: 1px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#About .abt > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+}
+
+#About .ab._1 p {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: medium;
+}
+
+#About .skills {
+  display: flex;
+  justify-self: center;
+}
+
+#About .ab._2 {
+  height: 100%;
+}
+
+#About .ab._2 h3 {
+  font-family: "Allison", cursive;
+  font-size: 2rem;
+  margin-bottom: 5%;
+}
+
+#About .skills .skills_list {
+  width: 50%;
+}
+
+#About .skills li {
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 5%;
+}
+
+.Fig._5.Container {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0%;
+  margin: 0%;
+  margin-bottom: -2%;
+  height: auto;
+  width: 100%;
+  fill: blueviolet;
+  overflow: hidden;
+}

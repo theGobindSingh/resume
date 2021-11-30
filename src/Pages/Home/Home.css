@@ -1,0 +1,101 @@
+#Home {
+  /* height: 200vh; */
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 03%;
+  padding-bottom: 03%;
+}
+
+#Home .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 02.5%;
+  margin-right: 02.5%;
+  width: 30%;
+  text-shadow: 0 0 75px blueviolet;
+}
+#Home .text span {
+  font-family: "Josefin Sans", sans-serif;
+}
+#Home .text h1 {
+  font-family: "Comforter", cursive;
+  font-size: 5rem;
+  font-weight: 200;
+}
+
+#Home .image {
+  width: 20vw;
+  height: 20vw;
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 02.5%;
+  margin-right: 02.5%;
+  box-shadow: 0 0 20px grey;
+  opacity: 0;
+  animation: forHomeImg 1s ease 0.2s 1 normal forwards;
+}
+
+#Home .image img {
+  object-fit: cover;
+  height: 100%;
+  width: auto;
+}
+
+@keyframes forHomeImg {
+  from {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    width: 20vw;
+    height: 20vw;
+    opacity: 1;
+  }
+}
+
+.Fig {
+  z-index: -99;
+}
+.Fig._1.Container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0%;
+  margin: 0%;
+  height: 200px;
+  width: 200px;
+  fill: #fbe7e0;
+  overflow: hidden;
+}
+.Fig._2.Container {
+  position: absolute;
+  left: 65%;
+  top: 0;
+  padding: 0%;
+  margin: 0%;
+  height: 150px;
+  width: 150px;
+  fill: #ffecab;
+  overflow: hidden;
+}
+.Fig._3.Container {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0%;
+  margin: 0%;
+  margin-bottom: -2%;
+  height: auto;
+  width: 100%;
+  fill: blueviolet;
+  overflow: hidden;
+}
