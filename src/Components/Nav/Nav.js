@@ -40,28 +40,28 @@ export default function Nav() {
               navi();
             }}
           >
-            <a href={linkPre + "/#Home"}>Home</a>
+            <a href="/#Home">Home</a>
           </li>
           <li
             onClick={() => {
               navi();
             }}
           >
-            <a href={linkPre + "/#About"}>About</a>
+            <a href="/#About">About</a>
           </li>
           <li
             onClick={() => {
               navi();
             }}
           >
-            <a href={linkPre + "/#ExpEdu"}>Education & Experience</a>
+            <a href="/#ExpEdu">Education & Experience</a>
           </li>
           <li
             onClick={() => {
               navi();
             }}
           >
-            <a href={linkPre + "/#Sample"}>My Sample Works</a>
+            <a href="/#Sample">My Sample Works</a>
           </li>
         </ul>
       </nav>
