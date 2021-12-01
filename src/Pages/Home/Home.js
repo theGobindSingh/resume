@@ -19,7 +19,9 @@ export default function Home() {
           Hey there! I am
         </span>
         <h1>Gobind Singh</h1>
-        <span style={{ alignSelf: "flex-end", width: "60%" }}>{homeText}</span>
+        <span className="s2" style={{ alignSelf: "flex-end", width: "60%" }}>
+          {homeText}
+        </span>
       </div>
       <div className="image">
         <img src={Me} alt="Gobind Singh" />
