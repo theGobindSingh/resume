@@ -99,3 +99,33 @@
   fill: lightskyblue;
   overflow: hidden;
 }
+
+@media screen and (max-width: 800px) {
+  #Home .text {
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    width: 35%;
+  }
+  #Home .text h1 {
+    font-size: 3rem;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  #Home .text span {
+    align-self: unset !important;
+    padding-left: 0 !important;
+    width: 100% !important;
+  }
+  #Home .image {
+    width: 45vw !important;
+    height: 45vw !important;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+  }
+
+  #Home .image img {
+    object-fit: cover;
+    height: 100%;
+    width: auto;
+  }
+}

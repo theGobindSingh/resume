@@ -71,12 +71,7 @@
   overflow: hidden;
   transition: all ease-in-out 0.3s;
 }
-@media screen and (max-width: 768px) {
-  #Sample .websiteContainer {
-    justify-content: center;
-    align-items: flex-start;
-  }
-}
+
 #Sample .websiteContainer img {
   height: 100%;
   width: auto;
@@ -148,4 +143,55 @@
   bottom: 5%;
   right: 5%;
   animation: rotLef 6s linear 0s infinite reverse forwards;
+}
+#Sample .Fig._2.Container {
+  position: absolute;
+  fill: lightskyblue;
+  width: 15vw;
+  height: 15vw;
+  top: unset;
+  top: 30%;
+  right: -3%;
+  left: unset;
+}
+
+@media screen and (max-width: 800px) {
+  #Sample .allContent {
+    padding-bottom: 27%;
+  }
+  #Sample .websiteContainer {
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 60vw;
+    border-radius: 20px;
+  }
+  #Sample .heading_and_webCont h2 {
+    margin-bottom: 3%;
+    font-size: 2rem;
+  }
+  #Sample .Fig._7.Container {
+    bottom: 17%;
+  }
+  #Sample .btn {
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+  }
+  #Sample .websiteContainer img {
+    height: auto;
+    width: 100%;
+    object-fit: cover !important;
+  }
+  #Sample .websiteContainer:hover img {
+    height: 100%;
+  }
+  #Sample .websiteContainer h3 {
+    font-size: 2rem;
+  }
+  #Sample .websiteContainer:hover h3 {
+    font-size: 2rem;
+    color: aliceblue;
+    text-shadow: none;
+  }
 }

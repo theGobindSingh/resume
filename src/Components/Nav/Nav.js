@@ -65,6 +65,13 @@ export default function Nav() {
           >
             <Link to="/#Sample">My Sample Works</Link>
           </li>
+          <li
+            onClick={() => {
+              navi();
+            }}
+          >
+            <Link to="/#Contact">Contact</Link>
+          </li>
         </ul>
       </nav>
     </div>

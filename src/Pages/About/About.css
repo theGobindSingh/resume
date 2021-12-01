@@ -94,3 +94,44 @@
   fill: lightskyblue;
   overflow: hidden;
 }
+
+@media screen and (max-width: 800px) {
+  #About .allContent {
+    justify-content: flex-start;
+    padding-top: 17%;
+  }
+  #About h2 {
+    font-size: 3rem;
+  }
+  #About h3 {
+    font-size: 2.2rem !important;
+  }
+  #About p,
+  #About li {
+    font-size: x-small !important;
+  }
+  #About .abt {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+  #About .rule {
+    height: 1px !important;
+    width: 100% !important;
+    margin: 0 !important;
+    margin-top: 5% !important;
+    margin-bottom: 5% !important;
+  }
+
+  #About .skills {
+    display: flex;
+    justify-self: center;
+  }
+
+  #About .ab._1,
+  #About .ab._2 {
+    height: auto;
+    width: 100%;
+  }
+}

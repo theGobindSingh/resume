@@ -77,3 +77,9 @@
     transform: translateX(0px);
   }
 }
+
+@media screen and (max-height: 800px) {
+  #Nav .nav-links {
+    width: 70% !important;
+  }
+}

@@ -1,6 +1,7 @@
 import "./Sample.css";
 import React, { useState } from "react";
 
+import Fig2 from "../../Assets/SVGs/Fig2";
 import Fig6 from "../../Assets/SVGs/Fig6";
 import Fig7 from "../../Assets/SVGs/Fig7";
 
@@ -36,11 +37,13 @@ export default function Sample() {
           className="prev_web btn"
           onClick={() => {
             try {
-              const btn = document.querySelector(".prev_web");
-              btn.classList.add("temp");
-              setTimeout(() => {
-                btn.classList.remove("temp");
-              }, 400);
+              if (window.screen.width >= 800) {
+                const btn = document.querySelector(".prev_web");
+                btn.classList.add("temp");
+                setTimeout(() => {
+                  btn.classList.remove("temp");
+                }, 400);
+              }
               fun("prev");
             } catch {}
           }}
@@ -66,11 +69,13 @@ export default function Sample() {
           className="next_web btn"
           onClick={() => {
             try {
-              const btn = document.querySelector(".next_web");
-              btn.classList.add("temp");
-              setTimeout(() => {
-                btn.classList.remove("temp");
-              }, 400);
+              if (window.screen.width >= 800) {
+                const btn = document.querySelector(".next_web");
+                btn.classList.add("temp");
+                setTimeout(() => {
+                  btn.classList.remove("temp");
+                }, 400);
+              }
               fun("next");
             } catch {}
           }}
@@ -82,6 +87,7 @@ export default function Sample() {
         </button>
       </div>
       <Fig7 />
+      <Fig2 />
     </section>
   );
 }

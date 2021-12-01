@@ -1,0 +1,99 @@
+#Contact {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#Contact h2 {
+  margin-bottom: 3%;
+  font-family: "Comforter", cursive;
+  font-size: 4rem;
+  font-weight: 200;
+}
+
+#Contact .allContent {
+  width: 60%;
+  display: grid;
+  justify-content: center;
+  gap: 5%;
+  grid-template-columns: repeat(5, 25%);
+  /* grid-template-rows: 1; */
+}
+#Contact .allContent .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#Contact .card a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#Contact .card h3 {
+  margin-top: 20px;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  font-family: "Shalimar", cursive;
+}
+#Contact .card p {
+  font-style: italic;
+  font-size: small;
+}
+
+#Contact .card .icon {
+  /* height: 3.5vw;
+ width: 3.5vw;  */
+  padding: 2vw;
+  background-color: lightgray;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0px solid black;
+  border-radius: 50%;
+  transition: background-color ease-in-out 0.3s, color ease-in-out 0.3s,
+    height ease-in-out 0.3s, width ease-in-out 0.3s;
+}
+#Contact .card .icon:hover {
+  background-color: lightskyblue;
+  color: aliceblue;
+  padding: 1.5vw;
+}
+#Contact .card .icon:hover svg {
+  height: 3.5vw;
+  width: 3.5vw;
+}
+#Contact .card .icon svg {
+  height: 2.5vw;
+  width: 2.5vw;
+}
+
+@media screen and (max-width: 800px) {
+  #Contact {
+    justify-content: flex-start;
+    padding-top: 15%;
+  }
+  #Contact .allContent {
+    width: 100%;
+    grid-template-columns: repeat(2, 40%);
+  }
+  #Contact .card h3 {
+    font-size: 2.5rem;
+    margin-top: 5%;
+  }
+  #Contact .card .icon {
+    padding: 6vw;
+    background-color: lightskyblue;
+    color: aliceblue;
+  }
+  #Contact .card .icon svg {
+    height: 6vw;
+    width: 6vw;
+  }
+}
